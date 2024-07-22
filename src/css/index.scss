@@ -1,0 +1,309 @@
+@use "sass:map";
+@use "sass:string";
+@use "variables" as var;
+
+$break-points: (
+  mobile: 480px,
+  tablet: 720px,
+  desktopS: 960px,
+  desktop: 1240px,
+  desktopHD: 1920px
+);
+
+$white: "#ffffff";
+
+// Barlow Light
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../public/fonts/Barlow-Light.woff2") format("woff2"),
+    url("../../public/fonts/Barlow-Light.woff") format("woff");
+}
+
+// Barlow Regular
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../public/fonts/Barlow-Regular.woff2") format("woff2"),
+    url("../../public/fonts/Barlow-Regular.woff") format("woff");
+}
+
+// Barlow Medium
+@font-face {
+  font-family: "barlow-medium";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../public/fonts/Barlow-Medium.woff2") format("woff2"),
+    url("../../public/fonts/Barlow-Medium.woff") format("woff");
+}
+
+// Barlow Semi-Bold
+@font-face {
+  font-family: "barlow-semi-bold";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url("../../public/fonts/Barlow-SemiBold.woff2") format("woff2"),
+    url("../../public/fonts/Barlow-SemiBold.woff") format("woff");
+}
+
+// Barlow Bold
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../../public/fonts/Barlow-Bold.woff2") format("woff2"),
+    url("../../public/fonts/Barlow-Bold.woff") format("woff");
+}
+
+/** Helper to build @media query. Use named arguments only! */
+@mixin breakpoint-range($mode: screen, $from: false, $to: false, $extra: ()) {
+  /** Checking arguments consistency */
+  @each $key in ($from, $to) {
+    @if $key and not map.has-key($break-points, $key) {
+      @error "Available values for ($from, $to) args are: #{map.keys($break-points)}";
+    }
+  }
+
+  /** Accumulator */
+  $conditions: $mode;
+
+  /** Combining breakpoints dependencies */
+  @each $key, $value in (min-width: $from, max-width: $to) {
+    @if $value {
+      $modifier: if($key == "max-width", -1px, 0px);
+      $condition: " and (#{$key}: #{map.get($break-points, $value) - $modifier})";
+      $conditions: string.insert($conditions, $condition, -1);
+    }
+  }
+
+  /** Combining rest dependencies */
+  @each $key, $value in $extra {
+    $condition: " and (#{$key}: #{$value})";
+  }
+
+  /** Building final media query */
+  @media #{$conditions} {
+    @content;
+  }
+}
+
+.mt-outlet {
+  margin-top: 0px !important;
+}
+
+#header {
+  .page-header {
+    background-color: var.$grey-color !important;
+    padding: 20px 0;
+  }
+  .nav-link {
+    font-size: 16px !important;
+    text-transform: capitalize;
+    color: var.$grey-2 !important;
+    font-family: "barlow-medium";
+    align-items: center;
+    line-height: 1;
+    position: relative;
+    margin: 0px 10px 0px 10px !important;
+    z-index: 1;
+  }
+}
+
+.scroll-to-top {
+  z-index: 9999;
+  cursor: pointer I !important;
+  color: var.$white-color;
+  i {
+    font-size: 30px !important;
+  }
+}
+
+footer {
+  // position: absolute;
+  font-family: "barlow-light" !important;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var.$footer-bg;
+  padding: 80px 0 55px;
+  color: var.$footer-text;
+  @media (max-width: 991.98px) {
+    justify-content: center !important;
+  }
+  .vstack {
+    i {
+      color: var.$site-yellow;
+      font-size: 20px !important;
+    }
+  }
+  h5 {
+    color: var.$site-yellow;
+  }
+  img {
+    width: 230px !important;
+    height: 50px !important;
+  }
+  p {
+    color: var.$footer-text;
+  }
+  .nav-link {
+    font-family: "barlow-light";
+    color: var.$footer-text;
+    font-size: 16px;
+  }
+  @include breakpoint-range($to: tablet) {
+    position: relative;
+  }
+}
+
+.copyright__wrapper {
+  background-color: var.$footer-bg;
+  border-top: 1px solid #2a4774;
+  padding: 30px 0 20px;
+  a,
+  p {
+    color: var.$site-yellow;
+    @media (max-width: 991.98px) {
+      text-align: center !important;
+    }
+  }
+}
+
+.copyright__menu ul {
+  gap: 0 15px;
+}
+
+.logo-header {
+  /* width: 130px !important;
+  height: 32px !important; */
+  width: 230px !important;
+  height: 50px !important;
+}
+
+#root {
+  font-family: barlow-regular !important;
+}
+
+.tl-case {
+  text-transform: lowercase;
+}
+
+.tu-case {
+  text-transform: uppercase;
+}
+
+.cursor {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: var.$site-yellow !important;
+  pointer-events: none;
+  z-index: 111;
+  // border: 1px solid #000;
+  transition: all 0.4s ease-out;
+  animation: moveCursor1 0.2s infinite alternate;
+  @include breakpoint-range($to: tablet) {
+    display: none !important;
+  }
+}
+
+.expand {
+  background: var.$site-green !important;
+  animation: moveCursor2 0.5s forwards;
+  // border: 1px solid #000;
+}
+
+@keyframes moveCursor1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.list-wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 55px;
+  line-height: 1.19;
+  margin: 0 0 20px;
+  font-family: "barlow-bold";
+  span {
+    color: var.$site-green !important;
+  }
+}
+
+.title-main2 {
+  font-family: "barlow-semi-bold";
+  font-size: 36px;
+  span {
+    color: var.$site-green !important;
+  }
+}
+
+p {
+  font-family: "barlow-regular";
+  font-size: 16px;
+  line-height: 1.75;
+  color: var.$para;
+  margin-bottom: 15px;
+}
+
+.moving-animo1 {
+  // top: 44%;
+  // left: 4.5%;
+  -webkit-animation: animo 3s linear infinite alternate;
+  -moz-animation: animo 3s linear infinite alternate;
+  -o-animation: animo 3s linear infinite alternate;
+  animation: animo 3s linear infinite alternate;
+}
+
+@keyframes animo {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-wrap li {
+  list-style: none !important;
+}
