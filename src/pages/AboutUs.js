@@ -1,8 +1,17 @@
 import React from 'react'
+import BreadCrumb from './BreadCrumb';
 
 const AboutUs = () => {
+  const breadCrumbArr = {
+    title: 'About Us',
+    link: [{ path: '/', page: 'Home' }],
+    CurrentPage: 'About Us'
+  };
+
   return (
-    <div>Whereas recognition of the inherent dignity</div>
+    <>
+      <BreadCrumb content={breadCrumbArr} />
+    </>
   )
 }
 

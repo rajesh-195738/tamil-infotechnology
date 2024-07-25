@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:string";
 @use "variables" as var;
+@import "./FontFamily.scss";
 
 $break-points: (
   mobile: 480px,
@@ -11,56 +12,6 @@ $break-points: (
 );
 
 $white: "#ffffff";
-
-// Barlow Light
-@font-face {
-  font-family: "barlow-light";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("../../public/fonts/Barlow-Light.woff2") format("woff2"),
-    url("../../public/fonts/Barlow-Light.woff") format("woff");
-}
-
-// Barlow Regular
-@font-face {
-  font-family: "barlow-regular";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("../../public/fonts/Barlow-Regular.woff2") format("woff2"),
-    url("../../public/fonts/Barlow-Regular.woff") format("woff");
-}
-
-// Barlow Medium
-@font-face {
-  font-family: "barlow-medium";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    url("../../public/fonts/Barlow-Medium.woff2") format("woff2"),
-    url("../../public/fonts/Barlow-Medium.woff") format("woff");
-}
-
-// Barlow Semi-Bold
-@font-face {
-  font-family: "barlow-semi-bold";
-  font-style: normal;
-  font-weight: 600;
-  src:
-    url("../../public/fonts/Barlow-SemiBold.woff2") format("woff2"),
-    url("../../public/fonts/Barlow-SemiBold.woff") format("woff");
-}
-
-// Barlow Bold
-@font-face {
-  font-family: "barlow-bold";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url("../../public/fonts/Barlow-Bold.woff2") format("woff2"),
-    url("../../public/fonts/Barlow-Bold.woff") format("woff");
-}
 
 /** Helper to build @media query. Use named arguments only! */
 @mixin breakpoint-range($mode: screen, $from: false, $to: false, $extra: ()) {
@@ -306,4 +257,229 @@ img {
 
 .list-wrap li {
   list-style: none !important;
+}
+
+.btn-tamil,
+.btn-tami:hover {
+  font-family: "barlow-semi-bold";
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 19px 24px 16px;
+  text-align: center;
+  background-color: var.$site-green !important;
+  border: none !important;
+}
+
+.sub-banner {
+  display: inline-block;
+  line-height: 1;
+  background: var.$light-green;
+  border-radius: 4px;
+  padding: 7px 15px;
+  font-family: "barlow-semi-bold";
+  color: var.$dark-green;
+  margin: 0 0 16px;
+}
+
+#courseCard {
+  .courses-item-two {
+    padding: 10px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background: var.$white-color;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin: 0 0 30px;
+  }
+  .courses-item-two-thumb {
+    position: relative;
+    h3 {
+      color: var.$white-color;
+    }
+    .course-price {
+      position: absolute;
+      bottom: -1px;
+      right: 0;
+      padding: 5px 10px 0px 20px;
+      text-align: center;
+      min-width: 105px;
+      z-index: 1;
+      .price {
+        font-size: 20px !important;
+        font-family: "barlow-semi-bold";
+      }
+      svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        color: var.$site-green;
+        z-index: -1;
+      }
+    }
+  }
+  .courses-item-two-content {
+    padding: 20px 13px 10px;
+    .courses-item-tag {
+      position: unset;
+      display: inline-block;
+      margin: 0 0 13px;
+      background-color: rgb(232, 249, 239);
+      font-size: 15px;
+      // display: block;
+      line-height: 1;
+      border-radius: 50px;
+      padding: 6px 16px;
+      color: rgb(4, 188, 83);
+    }
+    .courses-item-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 22px;
+      margin: 0 0 10px;
+      color: var.$para !important;
+    }
+    .title {
+      font-family: "barlow-medium";
+      font-size: 17px;
+      line-height: 1.38;
+      margin: 0 0 16px;
+      font-family: "barlow-medium";
+      a {
+        color: var.$content-blue !important;
+      }
+    }
+  }
+  .shine-animate-link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    :before {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0.3));
+      transform: skewX(-25deg);
+    }
+  }
+  .courses-item-bottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0 0;
+    margin: 20px 0 0;
+    border-top: 1px solid var.$grey-border;
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      img {
+        border-radius: 50%;
+        max-width: 40px;
+      }
+    }
+  }
+  .courses-item-rating {
+    color: #f8bc24;
+    letter-spacing: -1px;
+    line-height: 1;
+    .rating-count {
+      color: var.$para;
+      letter-spacing: 0;
+      margin-left: 5px;
+    }
+  }
+}
+
+.info-text-medium {
+  color: var.$info-text !important;
+  font-family: "barlow-medium";
+}
+
+.info-text-regular {
+  color: var.$info-text !important;
+  font-family: "barlow-regular";
+}
+
+// Section BreadCrumb
+#breadCrumb-section {
+  .breadcrumb-bg {
+    background-image: url(../assets/images/breadcrumbs-2.jpg);
+    position: relative;
+    padding: 150px 0 155px;
+    z-index: 1;
+    @media (max-width: 1500px) {
+      padding: 105px 0 110px;
+    }
+    @media (max-width: 1500px) {
+      padding: 105px 0 110px;
+    }
+  }
+  .breadcrumb-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #031227;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .breadcrumb-content {
+    .title {
+      font-size: 44px;
+      color: var.$white-color;
+      font-family: "barlow-bold";
+      text-transform: capitalize;
+      margin: 0;
+    }
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      list-style: none;
+      background-color: transparent;
+      border-radius: 0;
+      justify-content: flex-start;
+      align-items: center;
+      color: var.$white-color;
+      column-gap: 10px;
+      row-gap: 5px;
+      margin: 17px 0 0;
+      i {
+        font-size: 14px !important;
+      }
+      * {
+        display: block;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+      a,
+      .breadcrumb > * a:hover {
+        color: var.$site-yellow;
+        text-decoration: none;
+      }
+    }
+    .breadcrumb-separator {
+      line-height: 1;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 2px;
+      // opacity: 0.5;
+      color: var(--tg-common-color-white);
+    }
+  }
 }

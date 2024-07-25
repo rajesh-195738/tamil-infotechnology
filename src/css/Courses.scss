@@ -1,0 +1,46 @@
+@use "variables" as var;
+@import "./FontFamily.scss";
+
+#course-list {
+    padding: 80px 0;
+    position: relative;
+    background-color: var.$blue-shade !important;
+    .shorting__course {
+        padding: 20px;
+        margin-bottom: 50px;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        background: var.$white-color;
+        border-radius: 6px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    .all__icons {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        color: var.$site-green;
+        font-size: 26px;
+        .result-count {
+            color: var.$content-blue;
+            font-size: 16px;
+            font-family: 'barlow-semi-bold';
+            padding-left: 10px;
+        }
+    }
+    .course-filters {
+        display: flex;
+        gap: 10px;
+        .form-select {
+            background-color: #f2f4f9 !important;
+            border: none;
+            border-radius: 6px;
+            border-right: 15px solid #f2f4f9;
+            color: #5c5c68;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            // margin-left: 15px;
+            padding: 12px 15px;
+        }
+    }
+}
