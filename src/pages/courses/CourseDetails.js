@@ -1,9 +1,10 @@
 import React from 'react'
 import CoursesBreadCrums from '../CoursesBreadCrums';
-import { Container, Row, Col, Nav, Tab, Accordion, ProgressBar } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Tab, Accordion, ProgressBar, Image, Button } from 'react-bootstrap';
 import "../../css/Courses.scss";
 import CourseCard from '../CourseCard';
 import Author from '../../assets/images/author.png';
+import OnlineCls from '../../assets/images/online-class.jpg';
 
 const CourseDetails = () => {
   const breadCrumbArr = {
@@ -249,7 +250,7 @@ const CourseDetails = () => {
                                 <h4 className="course-review-head">Reviews (02)</h4>
                                 <ul className="list-wrap">
                                   <li>
-                                    <div className="review-author"><img src={Author} alt="img" /></div>
+                                    <div className="review-author"><Image src={Author} alt="img" /></div>
                                     <div className="review-author-info">
                                       <div className="review-stars-rated"><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i></div>
                                       <h5 className="user-name">Admin <span className="date">August 5, 2023</span></h5>
@@ -257,7 +258,7 @@ const CourseDetails = () => {
                                     </div>
                                   </li>
                                   <li>
-                                    <div className="review-author"><img src={Author} alt="img" /></div>
+                                    <div className="review-author"><Image src={Author} alt="img" /></div>
                                     <div className="review-author-info">
                                       <div className="review-stars-rated"><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i></div>
                                       <h5 className="user-name">Admin <span className="date">August 5, 2023</span></h5>
@@ -284,7 +285,7 @@ const CourseDetails = () => {
                                 <Accordion.Header>What are the different types of course?</Accordion.Header>
                                 <Accordion.Body>
                                   <Col sm="12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                   </Col>
                                 </Accordion.Body>
                               </Accordion.Item>
@@ -292,7 +293,7 @@ const CourseDetails = () => {
                                 <Accordion.Header>What makes Tamil info Teachnology different from other?</Accordion.Header>
                                 <Accordion.Body>
                                   <Col sm="12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                   </Col>
                                 </Accordion.Body>
                               </Accordion.Item>
@@ -300,7 +301,7 @@ const CourseDetails = () => {
                                 <Accordion.Header>What are the main features of Tamil info Technology?</Accordion.Header>
                                 <Accordion.Body>
                                   <Col sm="12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                   </Col>
                                 </Accordion.Body>
                               </Accordion.Item>
@@ -308,7 +309,7 @@ const CourseDetails = () => {
                                 <Accordion.Header>How will Tamil info Technology help me in the academic?</Accordion.Header>
                                 <Accordion.Body>
                                   <Col sm="12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nis Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                   </Col>
                                 </Accordion.Body>
                               </Accordion.Item>
@@ -323,7 +324,35 @@ const CourseDetails = () => {
 
             </Col>
             <Col sm="12" lg="3">
-
+              <aside id="right-side-content">
+                <div className="event-widget">
+                  <div className="thumb"><Image src={OnlineCls} alt="img" />
+                    <a className="popup-video" href='/#'><i className="bi bi-play-fill"></i></a></div>
+                  <div className="event-cost-wrap">
+                    <h4 className="price"><strong>Costs:</strong>$25.00 <span>$84.99</span></h4>
+                    <Button className="btn btn-primary tu-case btn-tamil">Enroll This Now</Button>
+                    <div className="event-information-wrap">
+                      <h6 className="title-main3">Include This Course</h6>
+                      <ul className="list-wrap">
+                        <li><i className="bi bi-clock "></i>Duration <span>5.2 Hours</span></li>
+                        <li><i className="bi bi-person-vcard"></i>Estimated Seat <span>250</span></li>
+                        <li><i className="bi bi-person-check"></i>Joined <span>190</span></li>
+                        <li><i className="bi bi-translate"></i>Laguage <span>English</span></li>
+                        <li><i className="bi bi-bookmarks"></i>Category <span>Desing</span></li>
+                        <li>
+                          <i className="bi bi-share"></i>Share
+                          <ul className="list-wrap event-social">
+                            <li><a href="/course-details#"><i className="bi bi-facebook"></i></a></li>
+                            <li><a href="/course-details#"><i className="bi bi-twitter"></i></a></li>
+                            <li><a href="/course-details#"><i className="bi bi-instagram"></i></a></li>
+                            <li><a href="/course-details#"><i className="bi bi-youtube"></i></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </aside>
             </Col>
           </Row>
         </Container>

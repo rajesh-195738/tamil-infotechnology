@@ -818,23 +818,85 @@
     padding: 120px 0;
     position: relative;
     background-color: var.$blue-shade !important;
-    .card-joinus {
-        padding: 10px;
-        transition: all 1s ease;
-        // background: var.$blue-shade;
-        background: var.$white-color;
-        border-radius: 6px;
-        border: none !important;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-        margin: 0 0 30px;
-        i {
-            color: var.$site-green;
-            font-size: 30px !important;
+    .btn-tamil {
+        padding: 15px;
+        border: 1px solid var.$site-green !important;
+        background-color: transparent !important;
+        color: var.$site-green;
+        font-family: 'barlow-semi-bold';
+    }
+    .categories__item-two {
+        a:hover .icon {
+            background-color: var.$site-yellow;
+            color: var.$white-color;
         }
-        h4 {
-            font-family: "barlow-semi-bold";
-            font-size: 24px;
-            color: var.$dark-blue;
+        a {
+            display: flex;
+            align-items: center;
+            padding: 26px;
+            background-color: var.$white-color;
+            border-radius: 8px;
+            margin: 0 0 30px;
+            gap: 10px 25px;
+            color: var.$site-green !important;
+            text-decoration: none;
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 98px;
+                height: 98px;
+                flex: 0 0 auto;
+                background: var.$white-color;
+                border-radius: 10px;
+                font-size: 50px;
+                position: relative;
+                box-shadow: 0 0 14px #d4dfed;
+                transition: all 0.3s ease-out 0s;
+            }
+            .name {
+                font-size: 19px;
+                color: var.$dark-blue;
+                font-family: "barlow-medium";
+                display: block;
+                transition: all 0.3s ease-out 0s;
+                line-height: 1.4;
+                margin: 0 0 6px;
+                @media (max-width: 991.98px) {
+                    font-size: 17px;
+                }
+
+                @media (max-width: 767.98px) {
+                    font-size: 19px;
+                }
+            }
+
+            .svg-icon svg {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 11px;
+                width: 81px;
+                height: 36px;
+                pointer-events: none;
+                color: #adc3e1;
+            }
+            @media (max-width: 1199.98px) {
+                gap: 15px 25px;
+                flex-direction: column;
+                text-align: center;
+            }
+            @media (max-width: 767.98px) {
+                gap: 10px 25px;
+                flex-direction: row;
+                text-align: left;
+            }
+            @media only screen and (min-width: 576px) and (max-width: 767px) {
+                gap: 15px 25px;
+                flex-direction: column;
+                text-align: center;
+            }
         }
     }
 }

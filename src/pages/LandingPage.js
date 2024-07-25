@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { Container, Row, Col, Image, Button, Nav, Tab, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col, Image, Button, Nav, Tab } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../css/LandingPage.scss';
@@ -130,29 +130,67 @@ const LandingPage = () => {
         </Container>
       </section>
 
-
-
       <section id="joinUs">
         <Container>
           <Row className='align-items-center justify-content-center'>
-            <Col sm="12" lg="6" data-aos="zoom-in-right">
+            <Col sm="12" lg="8" className='mb-4'>
               <span className="sub-banner">100% Satisfaction Guarantee</span>
-              <h3 className='title-main2'>Online Learning Courses <span>Designed</span> For Real Life</h3>
-              <Row>
-                {[...Array(4)].map((e, i) => (
-                  <Col sm="12" lg="6" key={i}>
-                    <Card className='card-joinus'>
-                      <p><i className="bi bi-telephone"></i></p>
-                      <h4 className='mt-2'>Self Paced Courses</h4>
-                      <span className='mt-2'>Learn & Upskill via Online Courses</span>
-                      <Link className='mt-2'>Take a look<i className="bi bi-arrow-right"></i></Link>
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
+              <h3 className='title-main2'>Browse <span>By Categories</span></h3>
             </Col>
-            <Col sm="12" lg="6" data-aos="zoom-in-up">
-
+            <Col sm="12" lg="4">
+              <div className="d-flex justify-content-end">
+                <Button className="btn btn-primary tu-case btn-tamil">All Categories</Button>
+              </div>
+            </Col>
+          </Row>
+          <Row className='justify-content-center'>
+            <Col sm="12" lg="4">
+              <div className="categories__item-two tg-svg" data-aos="fade-up">
+                <a href="/courses">
+                  <div className="icon"><i className="bi bi-layers"></i></div>
+                  <div className="info"><span className="name">Full Stack Development</span><span className="courses">Learn Javascript, HTML, CSS & more</span></div>
+                </a>
+              </div>
+            </Col>
+            <Col sm="12" lg="4">
+              <div className="categories__item-two tg-svg" data-aos="fade-up">
+                <a href="/courses">
+                  <div className="icon"><i className="bi bi-database"></i></div>
+                  <div className="info"><span className="name">Data Science</span><span className="courses">Learn Python, NLP, Tableau & more</span></div>
+                </a>
+              </div>
+            </Col>
+            <Col sm="12" lg="4">
+              <div className="categories__item-two tg-svg" data-aos="fade-up">
+                <a href="/courses">
+                  <div className="icon"><i className="bi bi-filetype-html"></i></div>
+                  <div className="info"><span className="name">UI UX Program</span><span className="courses">Learn UI, UX Principles & mores</span></div>
+                </a>
+              </div>
+            </Col>
+            <Col sm="12" lg="4">
+              <div className="categories__item-two tg-svg" data-aos="fade-up">
+                <a href="/courses">
+                  <div className="icon"><i className="bi bi-gear-wide-connected"></i></div>
+                  <div className="info"><span className="name">Automation & Testing</span><span className="courses">Learn Selenium, Python, Java & more</span></div>
+                </a>
+              </div>
+            </Col>
+            <Col sm="12" lg="4">
+              <div className="categories__item-two tg-svg" data-aos="fade-up">
+                <a href="/courses">
+                  <div className="icon"><i className="bi bi-filetype-js"></i></div>
+                  <div className="info"><span className="name">Javascript Zero to Hero</span><span className="courses">Learn React, Node, Vue & more</span></div>
+                </a>
+              </div>
+            </Col>
+            <Col sm="12" lg="4">
+              <div className="categories__item-two tg-svg" data-aos="fade-up">
+                <a href="/courses">
+                  <div className="icon"><i className="bi bi-filetype-py"></i></div>
+                  <div className="info"><span className="name">Python - IITM Pravartak Certified</span><span className="courses">Learn Selenium, Python, Java & more</span></div>
+                </a>
+              </div>
             </Col>
           </Row>
         </Container>
