@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tamil-infotechnology/static/css/main.51a5e45b.css",
-    "main.js": "/tamil-infotechnology/static/js/main.fabf2542.js",
-    "static/js/434.9dfd2c2e.chunk.js": "/tamil-infotechnology/static/js/434.9dfd2c2e.chunk.js",
+    "main.css": "/tamil-infotechnology/static/css/main.2598e15c.css",
+    "main.js": "/tamil-infotechnology/static/js/main.444349d9.js",
+    "static/js/990.f5c0d031.chunk.js": "/tamil-infotechnology/static/js/990.f5c0d031.chunk.js",
     "static/js/204.79235b6a.chunk.js": "/tamil-infotechnology/static/js/204.79235b6a.chunk.js",
     "static/js/206.88e653e4.chunk.js": "/tamil-infotechnology/static/js/206.88e653e4.chunk.js",
     "static/js/348.929f986d.chunk.js": "/tamil-infotechnology/static/js/348.929f986d.chunk.js",
@@ -30,9 +30,9 @@
     "static/media/course01.jpg": "/tamil-infotechnology/static/media/course01.29a5ef38380ef02e4c19.jpg",
     "static/media/logo-white.png": "/tamil-infotechnology/static/media/logo-white.d81c5d9cf44f4a35c1f9.png",
     "index.html": "/tamil-infotechnology/index.html",
-    "main.51a5e45b.css.map": "/tamil-infotechnology/static/css/main.51a5e45b.css.map",
-    "main.fabf2542.js.map": "/tamil-infotechnology/static/js/main.fabf2542.js.map",
-    "434.9dfd2c2e.chunk.js.map": "/tamil-infotechnology/static/js/434.9dfd2c2e.chunk.js.map",
+    "main.2598e15c.css.map": "/tamil-infotechnology/static/css/main.2598e15c.css.map",
+    "main.444349d9.js.map": "/tamil-infotechnology/static/js/main.444349d9.js.map",
+    "990.f5c0d031.chunk.js.map": "/tamil-infotechnology/static/js/990.f5c0d031.chunk.js.map",
     "204.79235b6a.chunk.js.map": "/tamil-infotechnology/static/js/204.79235b6a.chunk.js.map",
     "206.88e653e4.chunk.js.map": "/tamil-infotechnology/static/js/206.88e653e4.chunk.js.map",
     "348.929f986d.chunk.js.map": "/tamil-infotechnology/static/js/348.929f986d.chunk.js.map",
@@ -40,7 +40,7 @@
     "150.e2ce354a.chunk.css.map": "/tamil-infotechnology/static/css/150.e2ce354a.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.51a5e45b.css",
-    "static/js/main.fabf2542.js"
+    "static/css/main.2598e15c.css",
+    "static/js/main.444349d9.js"
   ]
 }
