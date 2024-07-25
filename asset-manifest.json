@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/tamil-infotechnology/static/css/main.fc5d7b1b.css",
-    "main.js": "/tamil-infotechnology/static/js/main.c1d2c924.js",
-    "static/css/7.ba14008e.chunk.css": "/tamil-infotechnology/static/css/7.ba14008e.chunk.css",
-    "static/js/7.f9bb00ba.chunk.js": "/tamil-infotechnology/static/js/7.f9bb00ba.chunk.js",
-    "static/css/541.1efbd6fe.chunk.css": "/tamil-infotechnology/static/css/541.1efbd6fe.chunk.css",
-    "static/js/541.9e4b99d8.chunk.js": "/tamil-infotechnology/static/js/541.9e4b99d8.chunk.js",
+    "main.css": "/tamil-infotechnology/static/css/main.51a5e45b.css",
+    "main.js": "/tamil-infotechnology/static/js/main.fabf2542.js",
+    "static/js/434.9dfd2c2e.chunk.js": "/tamil-infotechnology/static/js/434.9dfd2c2e.chunk.js",
+    "static/js/204.79235b6a.chunk.js": "/tamil-infotechnology/static/js/204.79235b6a.chunk.js",
     "static/js/206.88e653e4.chunk.js": "/tamil-infotechnology/static/js/206.88e653e4.chunk.js",
     "static/js/348.929f986d.chunk.js": "/tamil-infotechnology/static/js/348.929f986d.chunk.js",
     "static/js/453.2f2755c6.chunk.js": "/tamil-infotechnology/static/js/453.2f2755c6.chunk.js",
-    "static/js/115.1633d426.chunk.js": "/tamil-infotechnology/static/js/115.1633d426.chunk.js",
+    "static/css/150.e2ce354a.chunk.css": "/tamil-infotechnology/static/css/150.e2ce354a.chunk.css",
     "static/media/banner-tamil.jpg": "/tamil-infotechnology/static/media/banner-tamil.c3f64839ce86f24bcfea.jpg",
     "static/media/bootstrap-icons.woff?": "/tamil-infotechnology/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/tamil-infotechnology/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
@@ -32,19 +30,17 @@
     "static/media/course01.jpg": "/tamil-infotechnology/static/media/course01.29a5ef38380ef02e4c19.jpg",
     "static/media/logo-white.png": "/tamil-infotechnology/static/media/logo-white.d81c5d9cf44f4a35c1f9.png",
     "index.html": "/tamil-infotechnology/index.html",
-    "main.fc5d7b1b.css.map": "/tamil-infotechnology/static/css/main.fc5d7b1b.css.map",
-    "main.c1d2c924.js.map": "/tamil-infotechnology/static/js/main.c1d2c924.js.map",
-    "7.ba14008e.chunk.css.map": "/tamil-infotechnology/static/css/7.ba14008e.chunk.css.map",
-    "7.f9bb00ba.chunk.js.map": "/tamil-infotechnology/static/js/7.f9bb00ba.chunk.js.map",
-    "541.1efbd6fe.chunk.css.map": "/tamil-infotechnology/static/css/541.1efbd6fe.chunk.css.map",
-    "541.9e4b99d8.chunk.js.map": "/tamil-infotechnology/static/js/541.9e4b99d8.chunk.js.map",
+    "main.51a5e45b.css.map": "/tamil-infotechnology/static/css/main.51a5e45b.css.map",
+    "main.fabf2542.js.map": "/tamil-infotechnology/static/js/main.fabf2542.js.map",
+    "434.9dfd2c2e.chunk.js.map": "/tamil-infotechnology/static/js/434.9dfd2c2e.chunk.js.map",
+    "204.79235b6a.chunk.js.map": "/tamil-infotechnology/static/js/204.79235b6a.chunk.js.map",
     "206.88e653e4.chunk.js.map": "/tamil-infotechnology/static/js/206.88e653e4.chunk.js.map",
     "348.929f986d.chunk.js.map": "/tamil-infotechnology/static/js/348.929f986d.chunk.js.map",
     "453.2f2755c6.chunk.js.map": "/tamil-infotechnology/static/js/453.2f2755c6.chunk.js.map",
-    "115.1633d426.chunk.js.map": "/tamil-infotechnology/static/js/115.1633d426.chunk.js.map"
+    "150.e2ce354a.chunk.css.map": "/tamil-infotechnology/static/css/150.e2ce354a.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.fc5d7b1b.css",
-    "static/js/main.c1d2c924.js"
+    "static/css/main.51a5e45b.css",
+    "static/js/main.fabf2542.js"
   ]
 }
