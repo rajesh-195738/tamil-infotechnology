@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktamil_infotech=self.webpackChunktamil_infotech||[]).push([[713],{1713:(e,s,t)=>{t.r(s),t.d(s,{default:()=>i});t(5043);var c=t(579);const i=()=>(0,c.jsx)("div",{children:"Courses"})}}]);
-//# sourceMappingURL=713.3285ba4b.chunk.js.map

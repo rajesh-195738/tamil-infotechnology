@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktamil_infotech=self.webpackChunktamil_infotech||[]).push([[206],{8206:(e,i,t)=>{t.r(i),t.d(i,{default:()=>h});t(5043);var n=t(579);const h=()=>(0,n.jsx)("div",{children:"Whereas recognition of the inherent dignity"})}}]);
-//# sourceMappingURL=206.082aef06.chunk.js.map
