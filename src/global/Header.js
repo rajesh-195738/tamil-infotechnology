@@ -22,7 +22,7 @@ const Header = () => {
                                 <Nav.Link as={Link} to="about-us">About Us</Nav.Link>
                                 <NavDropdown title="Courses" id="collapsible-nav-dropdown">
                                 <NavDropdown.Item as={Link} to="/courses">All Courses</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="/courses-1">Course-1</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/course-details">Course-1</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/course-2">Course-2</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/course-3">Course-3</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/course-4">Course-4</NavDropdown.Item>

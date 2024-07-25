@@ -11,8 +11,6 @@ $break-points: (
   desktopHD: 1920px
 );
 
-$white: "#ffffff";
-
 /** Helper to build @media query. Use named arguments only! */
 @mixin breakpoint-range($mode: screen, $from: false, $to: false, $extra: ()) {
   /** Checking arguments consistency */
@@ -98,8 +96,9 @@ footer {
     color: var.$site-yellow;
   }
   img {
-    width: 230px !important;
-    height: 50px !important;
+    width: 270px !important;
+    height: 60px !important;
+    margin-top: -20px;
   }
   p {
     color: var.$footer-text;
@@ -114,9 +113,9 @@ footer {
   }
 }
 
-.copyright__wrapper {
+.copyright-wrapper {
   background-color: var.$footer-bg;
-  border-top: 1px solid #2a4774;
+  border-top: 1px solid var.$para;
   padding: 30px 0 20px;
   a,
   p {
@@ -127,7 +126,7 @@ footer {
   }
 }
 
-.copyright__menu ul {
+.copyright-menu ul {
   gap: 0 15px;
 }
 
@@ -219,6 +218,21 @@ footer {
 .title-main2 {
   font-family: "barlow-semi-bold";
   font-size: 36px;
+  span {
+    color: var.$site-green !important;
+  }
+}
+
+.title-main3 {
+  font-family: "barlow-semi-bold";
+  font-size: 30px;
+  span {
+    color: var.$site-green !important;
+  }
+}
+.title-main4 {
+  font-family: "barlow-semi-bold";
+  font-size: 24px;
   span {
     color: var.$site-green !important;
   }
@@ -390,7 +404,7 @@ img {
     }
   }
   .courses-item-rating {
-    color: #f8bc24;
+    color: var.$site-yellow;
     letter-spacing: -1px;
     line-height: 1;
     .rating-count {
@@ -432,7 +446,7 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #031227;
+    background-color: var.$dark-blue;
     opacity: 0.8;
     z-index: -1;
   }
@@ -482,4 +496,112 @@ img {
       color: var(--tg-common-color-white);
     }
   }
+}
+
+// Courses Breadcrums
+#courses-breadcrums {
+  .courses-breadcrumb-area {
+    background-color: var.$bg-breadcrums;
+    gap: 0 28px;
+    padding: 82px 0;
+  }
+  .courses-breadcrumb-content {
+    .category {
+      display: inline-block;
+      font-size: 15px;
+      font-family: "barlow-medium";
+      color: var.$white-color;
+      background: var.$site-green;
+      line-height: 1;
+      border-radius: 50px;
+      padding: 6px 16px;
+      margin: 0 0 12px;
+    }
+
+    .title {
+      font-size: 36px;
+      color: var.$white-color;
+      line-height: 1.3;
+      margin: 0 0 6px;
+      @media (max-width: 767.98px) {
+        font-size: 24px;
+      }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        font-size: 30px;
+      }
+    }
+    p {
+      color: var.$light-grey;
+      margin: 0;
+    }
+    .courses-item-meta {
+      margin: 25px 0 0;
+      gap: 10px 19px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      li {
+        color: var.$light-grey;
+        .author {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          a {
+            flex: 0 0 auto;
+
+            color: var.$light-grey;
+          }
+          img {
+            border: 2px solid var.$white-color;
+            border-radius: 50%;
+          }
+        }
+        i {
+          color: var(--tg-common-color-white);
+          font-size: 18px;
+          margin-top: -1px;
+        }
+        .rating {
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 15px;
+            color: var.$site-yellow;
+            margin: 0 5px 0 0;
+          }
+        }
+        .rating-count {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .buy-course-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: var.$white-color !important;
+}
+  .price-savings {
+    color: var.$dark-blue !important;
+    font-family: "barlow-semi-bold";
+    background-color: var.$site-yellow;
+    padding: 0.5rem 1rem;
+    border-radius: 1.8rem;
+    font-size: 14px;
+  }
+  .actual-price {
+    color: var.$white-color !important;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  .discount-price {
+    color: var.$site-yellow !important;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
 }

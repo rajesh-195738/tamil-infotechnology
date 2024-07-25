@@ -44,7 +44,7 @@ const CourseCard = (props) => {
                                 <a href="/index-2#">David Millar</a>
                             </div>
                             <div className="courses-item-rating">
-                                <i className="fas fa-star"></i><span className="rating-count">(4.2)</span>
+                                <i className="bi bi-star-fill"></i><span className="rating-count">(4.2)</span>
                             </div>
                         </div>
                     </div>

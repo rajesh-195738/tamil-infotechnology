@@ -17,10 +17,10 @@ const Courses = () => {
       <BreadCrumb content={breadCrumbArr} />
       <section id="course-list">
         <Container>
-          <Row className='shorting__course align-items-center'>
+          <Row className='shorting-course align-items-center'>
             <Col sm="12" lg="2">
-              <div className="all__icons">
-                <div className="list__icons">
+              <div className="all-icons">
+                <div className="list-icons">
                   <i className="bi bi-filter-circle-fill"></i>
                 </div>
                 <div className="result-count">Filters</div></div>

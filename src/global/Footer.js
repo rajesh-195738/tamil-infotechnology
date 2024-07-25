@@ -58,7 +58,7 @@ const Footer = () => {
                     </Row>
                 </Container>
             </footer>
-            <div className="copyright__wrapper"><div className="container"><div className="row"><div className="col-lg-8"><div className="copyright__text"><p>Copyright © 2024 tamil-infotech. All rights reserved.</p></div></div><div className="col-lg-4"><div className="copyright__menu"><ul className="list-wrap d-flex flex-wrap justify-content-center justify-content-lg-end"><li><a href="/#">Privacy Policy</a></li><li><a href="/#">Terms  Conditions</a></li></ul></div></div></div></div></div>
+            <div className="copyright-wrapper"><div className="container"><div className="row"><div className="col-lg-8"><div className="copyright-text"><p>Copyright © 2024 tamil-infotech. All rights reserved.</p></div></div><div className="col-lg-4"><div className="copyright-menu"><ul className="list-wrap d-flex flex-wrap justify-content-center justify-content-lg-end"><li><a href="/#">Privacy Policy</a></li><li><a href="/#">Terms  Conditions</a></li></ul></div></div></div></div></div>
         </>
     )
 }
