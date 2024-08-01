@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, Col, Stack, Image, NavLink } from "react-bootstrap"
-import Logo from "../../../../src/assets/images/logo-white.png";
+import { Container, Row, Col, Stack, NavLink } from "react-bootstrap"
+// import Logo from "../../../../src/assets/images/logo-white.png";
 
 const Footer = () => {
     return (
@@ -9,10 +9,9 @@ const Footer = () => {
                 <Container>
                     <Row className="justify-content-center">
                             <Col xs="12" sm="6" lg="3">
-                            <Stack>
-                                <Image src={Logo} />
+                            <Stack>                                
                                 {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> */}
-                                <div className='d-flex mt-3'>
+                                <div className='d-flex'>
                                     <i className="bi bi-buildings-fill"></i>
                                     <span className='ms-2'>1st Floor, Naicker New 1st St, Pandian Nagar, Govindapuram, Dindigul, Tamil Nadu 624001</span>
                                 </div>
@@ -26,6 +25,7 @@ const Footer = () => {
                                     <span className='ms-2'>080567 80587</span>
                                 </div>
                             </Stack>
+                            {/* <Image src={Logo} /> */}
                         </Col>
                         <Col xs="12" sm="6" lg="3">
                             <h5>Community Programs</h5>

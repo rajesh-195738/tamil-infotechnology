@@ -52,7 +52,7 @@ const AboutUs = () => {
           </Row>
           <Row className='align-items-center justify-content-center'>
             {[...Array(3)].map((e, i) => (
-              <Col sm="12" lg="3">
+              <Col sm="12" lg="3" key={i}>
                 <div className="fact-item-two text-center">
                   <div className="fact-icon-two"><i className="bi bi-people-fill"></i></div>
                   <div className="fact-content-two">
@@ -77,28 +77,28 @@ const AboutUs = () => {
           </Row>
           <Row className='align-items-center justify-content-center'>
             {[...Array(4)].map((e, i) => (
-              <Col sm="12" lg="3">
-                <div class="mentors-item">
-                  <div class="mentors-img">
+              <Col sm="12" lg="3" key={i}>
+                <div className="mentors-item">
+                  <div className="mentors-img">
                     <a href="/instructor-details"><img src={Mentors} alt="mentor" /></a>
-                    <div class="mentors-social">
-                      <span class="share"><i class="bi bi-share"></i></span>
-                      <ul class="social-list list-wrap">
-                        <li><a href="/about-us#"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="/about-us#"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="/about-us#"><i class="bi bi-linkedin"></i></a></li>
+                    <div className="mentors-social">
+                      <span className="share"><i className="bi bi-share"></i></span>
+                      <ul className="social-list list-wrap">
+                        <li><a href="/about-us#"><i className="bi bi-facebook"></i></a></li>
+                        <li><a href="/about-us#"><i className="bi bi-twitter"></i></a></li>
+                        <li><a href="/about-us#"><i className="bi bi-linkedin"></i></a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="mentors-content">
-                    <div class="mentors-content-top">
-                      <h4 class="name"><a href="/instructor-details">Robert Smith</a></h4>
-                      <span class="designation">Graphic Design</span>
+                  <div className="mentors-content">
+                    <div className="mentors-content-top">
+                      <h4 className="name"><a href="/instructor-details">Robert Smith</a></h4>
+                      <span className="designation">Graphic Design</span>
                     </div>
-                    <div class="mentors-content-bottom">
-                      <ul class="list-wrap">
-                        <li class="students"><i class="bi bi-person"></i>1,135 Students</li>
-                        <li class="rating"><i className="bi bi-star-fill"></i><span class="rating-count">(5.0)</span></li>
+                    <div className="mentors-content-bottom">
+                      <ul className="list-wrap">
+                        <li className="students"><i className="bi bi-person"></i>1,135 Students</li>
+                        <li className="rating"><i className="bi bi-star-fill"></i><span className="rating-count">(5.0)</span></li>
                       </ul>
                     </div>
                   </div>
