@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import "../css/Courses.scss";
+import "../../../css/Courses.scss";
 import Form from 'react-bootstrap/Form';
 import CourseCard from './CourseCard';
 import BreadCrumb from './BreadCrumb';

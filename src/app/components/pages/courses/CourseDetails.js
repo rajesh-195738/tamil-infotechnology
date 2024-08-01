@@ -1,10 +1,10 @@
 import React from 'react'
 import CoursesBreadCrums from '../CoursesBreadCrums';
 import { Container, Row, Col, Nav, Tab, Accordion, ProgressBar, Image, Button } from 'react-bootstrap';
-import "../../css/Courses.scss";
+import "../../../../css/Courses.scss";
 import CourseCard from '../CourseCard';
-import Author from '../../assets/images/author.png';
-import OnlineCls from '../../assets/images/online-class.jpg';
+import Author from '../../../../assets/images/author.png';
+import OnlineCls from '../../../../assets/images/online-class.jpg';
 
 const CourseDetails = () => {
   const breadCrumbArr = {
@@ -329,7 +329,7 @@ const CourseDetails = () => {
                   <div className="thumb"><Image src={OnlineCls} alt="img" />
                     <a className="popup-video" href='/#'><i className="bi bi-play-fill"></i></a></div>
                   <div className="event-cost-wrap">
-                    <h4 className="price"><strong>Costs:</strong>$25.00 <span>$84.99</span></h4>
+                    {/* <h4 className="price"><strong>Costs:</strong>$25.00 <span>$84.99</span></h4> */}
                     <Button className="btn btn-primary tu-case btn-tamil">Enroll This Now</Button>
                     <div className="event-information-wrap">
                       <h6 className="title-main3">Include This Course</h6>

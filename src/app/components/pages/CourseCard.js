@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import { Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
-import Course01 from '../assets/images/course01.jpg';
-import Author from '../assets/images/author.png';
-import '../css/LandingPage.scss'
+import Course01 from '../../../assets/images/course01.jpg';
+import Author from '../../../assets/images/author.png';
+import '../../../css/LandingPage.scss'
 
 const CourseCard = (props) => {
     const { colGrid } = props;

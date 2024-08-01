@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Stack, Image, NavLink } from "react-bootstrap"
-import Logo from "../assets/images/logo-white.png";
+import Logo from "../../../../src/assets/images/logo-white.png";
 
 const Footer = () => {
     return (

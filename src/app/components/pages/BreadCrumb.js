@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 
-const BreadCrumb = (props) => {
-    console.log(props);
+const BreadCrumb = (props) => {    
     const { title, link, CurrentPage } = props.content;
 
     return (

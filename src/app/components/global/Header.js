@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Nav, Navbar, Image, Container, NavDropdown } from 'react-bootstrap'
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo.png";
+import Logo from "../../../assets/images/logo.png";
 import * as util from "./script";
 import ScrollToTop from "react-scroll-to-top";
 
@@ -28,6 +28,7 @@ const Header = () => {
                                     <NavDropdown.Item as={Link} to="/course-4">Course-4</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                                <Nav.Link as={Link} to="contact-us">Contact Us</Nav.Link>
                             </Nav>
                             <Nav>
                                 {/* <Nav.Link href="#deets">More deets</Nav.Link> */}

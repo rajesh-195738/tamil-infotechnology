@@ -1,8 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import CustomSpinner from '../global/CustomSpinner';
+import { useSelector } from "react-redux";
 
-const PageLayout = () => {
+const PageLayout = () => {  
+  const loaderStatus = useSelector((state)=> state.loader.status);
+
   return (
     <>
         <Header />
@@ -10,6 +14,7 @@ const PageLayout = () => {
                 <Outlet />
             </div>
         <Footer />
+        <CustomSpinner show={loaderStatus} />
     </>  
   )
 }

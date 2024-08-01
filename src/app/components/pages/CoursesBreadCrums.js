@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import Author from '../assets/images/author.png';
+import Author from '../../../assets/images/author.png';
 
 const CoursesBreadCrums = () => {
     return (
