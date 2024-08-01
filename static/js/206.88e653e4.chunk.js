@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktamil_infotech=self.webpackChunktamil_infotech||[]).push([[206],{8206:(t,e,n)=>{n.r(e),n.d(e,{default:()=>c});n(5043);var a=n(1702),s=n(579);const c=()=>(0,s.jsx)(s.Fragment,{children:(0,s.jsx)(a.A,{content:{title:"About Us",link:[{path:"/",page:"Home"}],CurrentPage:"About Us"}})})}}]);
-//# sourceMappingURL=206.88e653e4.chunk.js.map

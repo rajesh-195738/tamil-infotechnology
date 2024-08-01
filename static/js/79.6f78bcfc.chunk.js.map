@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/79.6f78bcfc.chunk.js","mappings":"iKAEA,MAMA,EANcA,KAEVC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,S","sources":["app/components/global/My404.js"],"sourcesContent":["import React from 'react'\n\nconst My404 = () => {\n  return (\n    <div>My404</div>\n  )\n}\n\nexport default My404"],"names":["My404","_jsx","children"],"sourceRoot":""}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktamil_infotech=self.webpackChunktamil_infotech||[]).push([[79],{3079:(e,t,c)=>{c.r(t),c.d(t,{default:()=>s});c(5043);var i=c(579);const s=()=>(0,i.jsx)("div",{children:"My404"})}}]);
+//# sourceMappingURL=79.6f78bcfc.chunk.js.map
