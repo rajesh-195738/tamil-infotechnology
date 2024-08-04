@@ -6,6 +6,10 @@ import { useSelector } from "react-redux";
 
 const PageLayout = () => {  
   const loaderStatus = useSelector((state)=> state.loader.status);
+ 
+  
+  // Automatically scrolls to top whenever pathname changes
+  
 
   return (
     <>

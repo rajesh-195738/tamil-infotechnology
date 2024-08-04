@@ -642,7 +642,7 @@ img {
   // start
   $dot_jump: 20%;
   $dot_size: 30px;
-  $dot_color: #ebe421;
+  $dot_color: var.$site-yellow;
 
   #loading-dot {
     width: 120px;
@@ -697,7 +697,7 @@ img {
   }
   .dropdown-menu {
     // display: block !important;
-    animation: drodownEff 0.4s ease-in-out 0s  1 normal none running;
+    animation: drodownEff 0.4s ease-in-out 0s 1 normal none running;
     min-width: 250px !important;
     // width: max-content !important;
     background: var.$white-color;
@@ -762,6 +762,176 @@ img {
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.o-h {
+  overflow: hidden !important;
+}
+
+#about-us-instructor {
+  padding: 80px 0;
+  position: relative;
+  background-color: var.$white-color !important;
+  .mentors-item {
+    border: 1px solid var.$grey-border;
+    // box-shadow: 0 0 20px rgba(0,0,0,.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background: var.$white-color;
+    // max-width: 270px;
+    margin: 0 auto 30px;
+    .mentors-img {
+      text-align: center;
+      margin: 38px 50px 0;
+      position: relative;
+      a {
+        display: block;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+      }
+    }
+
+    .mentors-content-top {
+      text-align: center;
+      padding: 15px 20px 20px;
+      .name {
+        font-family: "barlow-medium";
+        a {
+          color: var.$dark-blue !important;
+          &:hover {
+            color: var.$site-green !important;
+          }
+        }
+      }
+      .designation{
+        font-family: 'barlow-regular';
+        color: var.$info-text;
+      }
+    }
+    .mentors-social {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -15px;
+      z-index: 2;
+    }
+
+    .mentors-social:hover .social-list,
+    .mentors-social:hover .social-list li {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mentors-social:hover .social-list li:not(:last-child) {
+      transform: translateX(0);
+    }
+
+    .mentors-social .share {
+      background: var.$site-green;
+      width: 40px;
+      height: 40px;
+      font-size: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var.$white-color;
+      cursor: pointer;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    .mentors-social .social-list {
+      position: absolute;
+      display: flex;
+      right: calc(100% + 5px);
+      top: 0;
+      gap: 5px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .mentors-social .social-list li {
+      transition: all 0.3s ease-out 0s;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .mentors-social .social-list li:not(:last-child) {
+      transform: translateX(10px);
+    }
+
+    .mentors-social .social-list li:nth-child(4) {
+      transition-delay: 0.1s;
+    }
+
+    .mentors-social .social-list li:nth-child(3) {
+      transition-delay: 0.15s;
+    }
+
+    .mentors-social .social-list li:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+
+    .mentors-social .social-list li:first-child {
+      transition-delay: 0.25s;
+    }
+
+    .mentors-social .social-list li a {
+      background: var.$site-green;
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var.$white-color;
+      cursor: pointer;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    .mentors-social .social-list li a:hover {
+      color: var.$site-green;
+      background: var.$white-color;
+    }
+    .mentors-content-bottom {
+      padding: 21px 28px;
+      border-top: 1px solid var.$grey-border;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          display: flex;
+          align-items: center;
+          line-height: 1;
+          gap: 5px;
+        }
+        .rating {
+          font-size: 16px;
+          color: var.$para;
+          i {
+            font-size: 15px;
+            color: var.$site-yellow;
+          }
+        }
+        .students {
+          font-size: 16px;
+          color: var.$para;
+          i {
+            font-size: 15px;
+            color: var.$para;
+          }
+        }
+      }
     }
   }
 }

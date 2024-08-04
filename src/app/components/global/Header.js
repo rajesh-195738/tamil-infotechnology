@@ -12,7 +12,7 @@ let timeout;
 const Header = () => {
     const { pathname } = useLocation();
     const [show, setShow] = useState(false);
-    const showDropdown = (e)=>{
+    const showDropdown = (e) => {
         setShow(!show);
     }
     const hideDropdown = e => {
@@ -51,22 +51,30 @@ const Header = () => {
                             <Nav className="me-auto">
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="about-us">About Us</Nav.Link>
-                                <NavDropdown title="Courses" id="collapsible-nav-dropdown" show={show} onMouseEnter={showDropdown}  onMouseLeave={hideDropdown}>
+                                <NavDropdown title="Courses" id="collapsible-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                                     <Container>
                                         <Row className='align-items-center justify-content-center'>
-                                            {/* <Col sm="12" lg="12">
-                                                <h5 className='title-main4'>Courses</h5>
-                                            </Col> */}
                                             <Col sm="12" lg="12">
-                                                <h5 className='li-title'>Front-end Courses</h5>
-                                                <ul className="list-wrap">
-                                                    <li><Link to={{pathname: "/course-details"}}>React Js</Link></li>
-                                                    <li><Link to={{pathname: "/course-details"}}>Angular</Link></li>
-                                                    <li><Link to={{pathname: "/course-details"}}>React Native</Link></li>
-                                                    <li><Link to={{pathname: "/course-details"}}>Vue Js</Link></li>
+                                                <ul className="list-wrap mb-2">
+                                                    <li><Link to={{ pathname: "/courses" }}>All Courses</Link></li>
                                                 </ul>
                                             </Col>
                                             <hr />
+                                            <Col sm="12" lg="12">
+                                                <h5 className='li-title'>List Of Courses</h5>
+                                                <ul className="list-wrap">
+                                                    <li><Link to={{ pathname: "/course-details" }}>React Js</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>Angular</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>Python</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>Java</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>CSS</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>JSON</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>HTML</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>SCSS</Link></li>
+                                                    <li><Link to={{ pathname: "/course-details" }}>Jquery</Link></li>
+                                                </ul>
+                                            </Col>
+                                            {/* <hr />
                                             <Col sm="12" lg="12" className='mt-3'>
                                                 <h5 className='li-title'>Back-end Courses</h5>
                                                 <ul className="list-wrap">
@@ -74,7 +82,7 @@ const Header = () => {
                                                 <li><Link to={{pathname: "/course-details"}}>Laravel</Link></li>
                                                 <li><Link to={{pathname: "/course-details"}}>Php</Link></li>
                                                 </ul>
-                                            </Col>
+                                            </Col> */}
                                             {/* <Col sm="12" lg="4">
                                                 <ul className="list-wrap">
                                                     <li>Become a UX designer.</li>
