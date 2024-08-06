@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Nav, Navbar, Image, Container, NavDropdown, Row, Col } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo.png";
-import * as util from "./script";
+// import * as util from "./script";
 import ScrollToTop from "react-scroll-to-top";
 import { useLocation } from 'react-router-dom';
 
@@ -19,9 +19,9 @@ const Header = () => {
         setShow(false);
     }
 
-    useEffect(() => {
-        util.add();
-    });
+    // useEffect(() => {
+    //     util.add();
+    // });
 
     useEffect(() => {
         window.onscroll = () => {
@@ -107,7 +107,7 @@ const Header = () => {
                     </Container>
                 </Navbar>
             </header>
-            <div className="cursor"></div>
+            {/* <div className="cursor"></div> */}
             <ScrollToTop smooth >Up </ScrollToTop>
             {/* <ScrollToTop transitionDelay='0s' showUnder={50}>
                 <span className="scroll-to-top"><i className="bi bi-arrow-up-circle-fill"></i></span>

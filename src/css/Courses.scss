@@ -20,6 +20,9 @@
         flex-wrap: wrap;
         color: var.$site-green;
         font-size: 26px;
+        @media (max-width: 991.98px) {
+            margin-bottom: 20px;
+        }
         .result-count {
             color: var.$content-blue;
             font-size: 16px;
@@ -41,6 +44,12 @@
             font-weight: 500;
             // margin-left: 15px;
             padding: 12px 15px;
+            @media (max-width: 991.98px) {
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 991.98px) {
+            display: block;
         }
     }
 }

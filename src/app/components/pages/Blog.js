@@ -1,5 +1,6 @@
 import React from 'react'
 import BreadCrumb from './BreadCrumb';
+import "../../../css/Pages.scss";
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import BlogImg from "../../../assets/images/blog.jpg";
