@@ -2,7 +2,8 @@ import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import Author from '../../../assets/images/author.png';
 
-const CoursesBreadCrums = () => {
+const CoursesBreadCrums = (props) => {
+    const { courseDetails } = props;
     return (
         <>
             <section id="courses-breadcrums">
@@ -12,8 +13,8 @@ const CoursesBreadCrums = () => {
                             <Col sm="8">
                                 <div className="courses-breadcrumb-content">
                                     <a className="category" href="/course-details#">Graphic Design</a>
-                                    <h3 className="title">Essential Beginners UX/UI Core Course For You 2023</h3>
-                                    <p>Kickstart your creative design journey with the Adobe Photoshop Course! Dive into the world of digital image manipulation and graphic design fundamentals from scratch with this comprehensive journey through Adobe Photoshop. From foundational theory on graphics elements and principles to advanced techniques like sky replacement and hair selection, this online course equips you with the skills needed to create stunning digital artwork and manipulate images with finesse and creativity.</p>
+                                    <h3 className="title">{courseDetails?.Course_Title}</h3>
+                                    <p>{courseDetails?.Overview}</p>
                                     <div className="buy-course mt-2">
                                         <p className="buy-course-heading mb-0">Buy this Course @</p>
                                         <div className="d-flex align-items-center buy-course-body">

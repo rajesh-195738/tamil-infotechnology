@@ -1,23 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import { Nav, Navbar, Image, Container, NavDropdown, Row, Col } from 'react-bootstrap'
+import React, { useEffect } from 'react'
+import { Nav, Navbar, Image, Container } from 'react-bootstrap'
+// import { Nav, Navbar, Image, Container, NavDropdown, Row, Col } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo.png";
 // import * as util from "./script";
 import ScrollToTop from "react-scroll-to-top";
 import { useLocation } from 'react-router-dom';
-
+// import axios from "axios";
+// // ForLoader
+// import { showLoader } from "../../features/loaderSlice";
+// import { useDispatch } from "react-redux";
 
 let timeout;
 
 const Header = () => {
     const { pathname } = useLocation();
-    const [show, setShow] = useState(false);
-    const showDropdown = (e) => {
-        setShow(!show);
-    }
-    const hideDropdown = e => {
-        setShow(false);
-    }
+    // const [show, setShow] = useState(false);
+    // const [courses, setCourses] = useState([]);
+    // const dispatch = useDispatch();
+    // const baseURL = "https://script.google.com/macros/s/AKfycbz3hwMI0BpifaZQ0OnWKIB7CcYxjSsOENzKNXYM3OqlH-CjPslPzFQxVGmTEnxlZK5yNA/exec";
+
+    // const showDropdown = (e) => {
+    //     setShow(!show);
+    // }
+    // const hideDropdown = e => {
+    //     setShow(false);
+    // }
 
     // useEffect(() => {
     //     util.add();
@@ -40,6 +48,24 @@ const Header = () => {
             }, 10)
         }
     }, [])
+
+
+//   useEffect(() => {
+//     dispatch(showLoader({ status: true }))
+//     let isMounted = true; // Flag to check if component is mounted
+//     axios.get(baseURL + '?action=course-list')
+//       .then(response => {
+//         dispatch(showLoader({ status: false }))
+//         if (isMounted) { // Only update state if component is still mounted
+//           // setData(response.data);
+//           setCourses(response?.data?.data)
+//         }
+//       });
+//     return () => {
+//       isMounted = false; // Cleanup function to set flag to false on unmount
+//     };
+//   }, []);
+
     return (
         <>
             <header id="header">
@@ -51,7 +77,8 @@ const Header = () => {
                             <Nav className="me-auto">
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="about-us">About Us</Nav.Link>
-                                <NavDropdown title="Courses" id="collapsible-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                                <Nav.Link as={Link} to="courses">Courses</Nav.Link>
+                                {/* <NavDropdown title="Courses" id="collapsible-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                                     <Container>
                                         <Row className='align-items-center justify-content-center'>
                                             <Col sm="12" lg="12">
@@ -63,37 +90,14 @@ const Header = () => {
                                             <Col sm="12" lg="12">
                                                 <h5 className='li-title'>List Of Courses</h5>
                                                 <ul className="list-wrap">
-                                                    <li><Link to={{ pathname: "/course-details" }}>React Js</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>Angular</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>Python</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>Java</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>CSS</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>JSON</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>HTML</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>SCSS</Link></li>
-                                                    <li><Link to={{ pathname: "/course-details" }}>Jquery</Link></li>
+                                                {courses.map((course, key) => (
+                                                    <li key={key}><Link to={{ pathname: "/course-details" }}>{course?.Course_Name}</Link></li>
+                                                ))}
                                                 </ul>
                                             </Col>
-                                            {/* <hr />
-                                            <Col sm="12" lg="12" className='mt-3'>
-                                                <h5 className='li-title'>Back-end Courses</h5>
-                                                <ul className="list-wrap">
-                                                <li><Link to={{pathname: "/course-details"}}>Python</Link></li>
-                                                <li><Link to={{pathname: "/course-details"}}>Laravel</Link></li>
-                                                <li><Link to={{pathname: "/course-details"}}>Php</Link></li>
-                                                </ul>
-                                            </Col> */}
-                                            {/* <Col sm="12" lg="4">
-                                                <ul className="list-wrap">
-                                                    <li>Become a UX designer.</li>
-                                                    <li>Create quick wireframes.</li>
-                                                    <li>You will be able to add UX designe</li>
-                                                    <li>Downloadable exercise files</li>
-                                                </ul>
-                                            </Col> */}
                                         </Row>
                                     </Container>
-                                </NavDropdown>
+                                </NavDropdown> */}
                                 <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                                 <Nav.Link as={Link} to="contact-us">Contact Us</Nav.Link>
                             </Nav>

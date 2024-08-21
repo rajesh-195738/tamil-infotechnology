@@ -27,6 +27,8 @@ const LandingPage = () => {
     });
   }, [])
 
+  
+
   return (
     <>
       {/* Banner Section */}

@@ -46,6 +46,11 @@ const ContactUs = () => {
                 } else {
                     alert(response.data.result.message);
                 }
+            }).catch((error) => {
+                if (error.response) {
+                    dispatch(showLoader({ status: false }));
+                    console.log(error.response.data); // => the response payload 
+                }
             });
 
         } else {

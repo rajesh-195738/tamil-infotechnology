@@ -7,7 +7,7 @@ import Author from '../../../assets/images/author.png';
 import '../../../css/LandingPage.scss'
 
 const CourseCard = (props) => {
-    const { colGrid } = props;
+    const { colGrid, courseDetails } = props;
     useEffect(() => {
         AOS.init({
             duration: 2000
@@ -18,7 +18,7 @@ const CourseCard = (props) => {
             <Col sm="12" lg={colGrid} id="courseCard">
                 <div className="courses-item-two shine-animate-item" data-aos="zoom-in-up">
                     <div className="courses-item-two-thumb">
-                        <Link className="shine-animate-link" to="/course/1">
+                        <Link className="shine-animate-link" to={courseDetails?.Course_Key}>
                             <Image src={Course01} alt="img" />
                         </Link>
                         <div className="course-price">
@@ -27,9 +27,11 @@ const CourseCard = (props) => {
                         </div>
                     </div>
                     <div className="courses-item-two-content">
-                        <Link className="courses-item-tag" to="/index-2#">Design</Link>
+                        <Link className="courses-item-tag">Design</Link>
                         <h5 className="title">
-                            <a href="/course/1">Bigener Adobe Illustrator for Graphic Design</a>
+                            <Link className="shine-animate-link" to={courseDetails?.Course_Key}>
+                                {courseDetails?.Course_Title}
+                            </Link>
                         </h5>
                         <ul className="courses-item-meta list-wrap"><li>
                             <i className="bi bi-journal-text"></i> 05</li>
@@ -38,7 +40,7 @@ const CourseCard = (props) => {
                         </ul>
                         <div className="courses-item-bottom">
                             <div className="author">
-                                <Link to="/index-2#">
+                                <Link>
                                     <Image src={Author} alt="img" />
                                 </Link>
                                 <a href="/index-2#">David Millar</a>

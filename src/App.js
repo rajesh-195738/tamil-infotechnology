@@ -33,7 +33,7 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/course-details" element={<CourseDetails />} />
+            <Route path="/courses/:course_key" element={<CourseDetails />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Route>
           <Route path="*" element={<My404 />} />

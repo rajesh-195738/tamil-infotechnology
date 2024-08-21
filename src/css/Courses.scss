@@ -69,12 +69,12 @@
         padding: 15px 6px 15px;
         .nav-pills {
             // justify-content: center;
-            gap: 40px;
+            gap: 0px;
             align-items: center;
             .nav-item,
             .nav-justified > .nav-link {
                 flex-basis: 0;
-                flex-grow: unset;
+                // flex-grow: unset;
             }
             .nav-link {
                 font-family: "barlow-regular";
@@ -120,12 +120,18 @@
                 flex-wrap: wrap;
                 margin-bottom: 40px;
                 li {
-                    display: flex;
+                    // display: flex;
                     font-size: 18px;
                     width: 50%;
                     color: var.$para;
-                    margin-bottom: 5px;
-                    font-family: "barlow-medium";
+                    margin-bottom: 5px;                    
+                    b{
+                        font-family: "barlow-medium";
+                        color: var.$bg-breadcrums;
+                    }
+                    span{
+                        font-family: "barlow-regular";
+                    }
                     i {
                         color: var.$site-green;
                         margin-right: 10px;
@@ -338,7 +344,8 @@
         font-family: "barlow-semi-bold";
     }
     .accordion-body {
-        padding: 20px 37px;
+        padding: 10px 37px;
+        // padding: 20px 37px;
     }
     // }
 
