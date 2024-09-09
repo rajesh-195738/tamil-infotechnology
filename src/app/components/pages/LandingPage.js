@@ -68,7 +68,7 @@ const LandingPage = () => {
                 <p>At Tamil Info Technology, we are committed to transforming lives through our comprehensive training programs tailored to meet the needs of today's tech-driven world.</p>
                 <div className="explore-course-banner">
                   <Button className="btn btn-primary tu-case btn-tamil">Explore Courses</Button>
-                  <div className="banner-phone"><i className="bi bi-telephone"></i><div className="number-info"><span>Have any Question?</span><h6 className="number"><a href="tel:739-75-04062">739-75-04062</a></h6></div></div>
+                  <div className="banner-phone"><i className="bi bi-telephone"></i><div className="number-info"><span>Have any Question?</span><h6 className="number"><a href="tel:+91 98765 43210">+91 98765 43210</a></h6></div></div>
                 </div>
               </div>
             </Col>
