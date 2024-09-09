@@ -299,6 +299,7 @@ img {
 .btn-tamil,
 .btn-tami:hover {
   font-family: "barlow-semi-bold";
+  color: var.$white-color !important;
   font-size: 15px !important;
   letter-spacing: 0.5px !important;
   line-height: 1 !important;
@@ -794,7 +795,8 @@ a {
 #about-us-instructor {
   padding: 80px 0;
   position: relative;
-  background-color: var.$white-color !important;
+  // background-color: var.$white-color !important;
+  // background-color: var.$blue-shade;
   .mentors-item {
     border: 1px solid var.$grey-border;
     // box-shadow: 0 0 20px rgba(0,0,0,.06);
@@ -956,4 +958,8 @@ a {
 
 html, body, #app, #app>div {
   height: 100%
+}
+
+.clr-blue-shade{
+  background-color: var.$blue-shade !important;
 }

@@ -66,31 +66,58 @@ const ContactUs = () => {
             <section id="contact-us">
                 <Container>
                     <Row>
-                        <Col sm="12" lg="5">
+                        <Col sm="12" lg="6">
                             <div className="contact-info-wrap">
                                 <h2 className="title">Keep In Touch With Us</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                <p>We’re here to help you take the next step in your career. Whether you have questions about our courses, need guidance on your learning path, or want to discuss partnership opportunities, feel free to reach out to us. We look forward to connecting with you!</p>
                                 <ul className="list-wrap">
                                     <li>
                                         <div className="icon"><i className="bi bi-geo-alt"></i></div>
                                         <div className="content">
-                                            <p>68 Street Holakt Street world <br /> 10002 New York</p>
+                                            <p><span>Tamil Info Technology</span><br />
+                                                No. 45, Sannathi Street,<br />
+                                                Dindigul, Tamilnadu, 624001, India</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="icon"><i className="bi bi-telephone"></i></div>
-                                        <div className="content"><a href="tel:0123456789">+123 555 69090</a><a href="tel:0123456789">+123 555 69090</a></div>
+                                        <div className="content">
+                                            <a href="tel:+91 98765 43210">+91 98765 43210</a>
+                                            {/* <a href="tel:+91 98765 43210">+123 555 69090</a> */}
+                                        </div>
                                     </li>
                                     <li>
                                         <div className="icon"><i className="bi bi-envelope"></i></div>
-                                        <div className="content"><a href="mailto:info@gmail.com">info@gmail.com</a><a href="mailto:info@gmail.com">info@gmail.com</a></div>
+                                        <div className="content">
+                                            <a href="mailto:info@tamiltinfo.com">info@tamiltinfo.com</a>
+                                            {/* <a href="mailto:info@gmail.com">info@gmail.com</a> */}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="icon"><i className="bi bi-alarm"></i></div>
+                                        <div className="content">
+                                            <h6>Office Hours</h6>
+                                            <a href="tel:+91 98765 43210"><span>Monday to Saturday</span>: 9:00 AM - 6:00 PM</a>
+                                            <a href="tel:+91 98765 43210"><span>Sunday</span>: Closed</a>
+                                            {/* <a href="mailto:info@gmail.com">info@gmail.com</a> */}
+                                        </div>
                                     </li>
                                 </ul>
+                                <div>
+                                    {/* <h6 className='mb-2 mt-3'>Stay connected with us on social media for the latest updates, events, and news:</h6> */}
+                                    <ul className="social-list list-wrap mt-4">
+                                        <li><a href="https://www.facebook.com/p/Tamil-Infotechnology-100066587747060/" target="_blank" rel="noopener noreferrer" className='socia-media-icons'><i className="bi bi-facebook"></i></a></li>
+                                        <li><a href="https://x.com/tamilinfotechdg" className='socia-media-icons ms-2' target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/tamil-info-technology/?originalSubdomain=in" className='socia-media-icons ms-2' target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a></li>
+                                        <li><a href="https://www.facebook.com/p/Tamil-Infotechnology-100066587747060/" className='socia-media-icons ms-2' target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </Col>
-                        <Col sm="12" lg="7">
+                        <Col sm="12" lg="6">
                             <div className="contact-form-wrap">
                                 <h4 className="title">Get in Touch</h4>
+                                <p>For any inquiries or support, fill out the contact form below, and our team will get back to you as soon as possible.</p>
                                 <Row>
                                     <Col sm="12" lg="6">
                                         <div className="form-grp"><input name="name" type="text" placeholder="Name *" value={formData.name} onChange={handleChange} required="" /></div>
@@ -108,7 +135,7 @@ const ContactUs = () => {
                                 <div className="form-grp"><textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} required=""></textarea></div>
                                 <button className="btn btn-tamil" onClick={handleSubmit}>Send Message</button>
                                 <p className="ajax-response mb-0"></p>
-                            </div>
+                            </div>                            
                         </Col>
                     </Row>
                 </Container>
